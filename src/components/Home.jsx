@@ -1,4 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import About from './About'
+import Contact from './Contact'
+import Services from './Services'
 
 export default function Home() {
   return (
@@ -14,13 +18,16 @@ export default function Home() {
                             Experience the world of technology with stunning talks , workshops , events and interactions
                         </p>
                         <div className="buttons d-flex justify-content-center mt-5">
-                            <button className="btn btn-light me-4 rounded-pill px-4 py-2">Explore Activites</button>
-                            <button className="btn btn-outline-light me-4 rounded-pill px-4 py-2">Gallary</button>
+                            <NavLink to="/latestevent" className="btn btn-light me-4 rounded-pill px-4 py-2">Latest Event</NavLink>
+                            <NavLink to="/gallary" className="btn btn-outline-light me-4 rounded-pill px-4 py-2">Gallary</NavLink>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <About/>
+        <Services/>
+        <Contact/>
     </div>
   )
 }

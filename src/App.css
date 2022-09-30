@@ -4,3 +4,13 @@
   background: radial-gradient(rgb(111, 0, 255) 50%, rgb(82, 0, 223) 100%);
   min-height: 500px;
 }
+
+.form{
+  background: rgb(0, 101, 219);
+  background: radial-gradient(rgb(111, 0, 255) 50%, rgb(82, 0, 223) 90%);
+}
+
+.footer{
+  background: rgb(0, 101, 219);
+  background: radial-gradient(rgb(111, 0, 255) 50%, rgb(82, 0, 223) 90%);
+}
