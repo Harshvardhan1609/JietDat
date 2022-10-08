@@ -17,7 +17,7 @@ export default function Latestevent() {
             {/* <div className="col-md-4 mb-2"> */}
             <div className="col-md-6 mb-2 align-items-center">
     <div class="card p-1  card-block text-center ">
-  <img className="card-img-top rounded shadow" src = {engineers} alt="Card image cap"/>
+  <img className="card-img-top rounded shadow" src = {engineers} alt="Card cap"/>
   <div class="card-body text-center">
     <h5 class="card-title  fs-5 fw-bold">Engineers day fest</h5>
   </div>
@@ -26,11 +26,11 @@ export default function Latestevent() {
     </div>
     <div className="col-md-6 mb-2 align-items-center">
     <div class="card p-1  card-block text-center ">
-  <img className="card-img-top rounded shadow" src = {open} alt="Card image cap"/>
+  <img className="card-img-top rounded shadow" src = {open} alt="Card cap"/>
   <div class="card-body text-center">
     <h5 class="card-title  fs-5 fw-bold">Open Source Development</h5>
   </div>
-    <a href="#" class="btn btn-primary rounded-pill">Coming Soon</a>
+    <a href="/" class="btn btn-primary rounded-pill">Coming Soon</a>
 </div>
     </div>
                 </div>

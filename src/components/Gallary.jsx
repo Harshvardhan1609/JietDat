@@ -19,12 +19,12 @@ export default function Gallary() {
                 </div>
             </div>
             <div className="row mt-4">
-                <GallaryCards image={placement} head="Placement"/>
-                <GallaryCards image={student} head="Student Council Interaction"/>
-                <GallaryCards image={ideathon} head="Ideathon"/>
-                <GallaryCards image={Nirman} head="Nirman"/>
-                <GallaryCards image={sam} head="Samvad"/>
-                <GallaryCards image={sih} head="Smart India Hackathon"/>
+                <GallaryCards himage={placement} head="Placement"/>
+                <GallaryCards himage={student} head="Student Council Interaction"/>
+                <GallaryCards himage={ideathon} head="Ideathon"/>
+                <GallaryCards himage={Nirman} head="Nirman"/>
+                <GallaryCards himage={sam} head="Samvad"/>
+                <GallaryCards himage={sih} head="Smart India Hackathon"/>
                 </div>
                 </div>
     </section>

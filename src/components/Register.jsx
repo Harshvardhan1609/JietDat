@@ -1,34 +1,78 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React , { useState } from 'react'
+// import { NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router'
 
 export default function Register() {
+
+  const history = useNavigate()
+
+  const [user, setUser] = useState({
+    username : "",
+    email: "",
+    password: ""
+  });
+
+  const handleInput = (event) => {
+    let name = event.target.name;
+    let value = event.target.value;
+    setUser({...user, [name]: value})
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    //Store object data into variables
+    const {username, email, password} = user;
+    try{
+
+
+
+      const res = await fetch('/register',{
+        method: 'POST',
+        headers : {
+          "Content-Type": "application/json"
+        },
+        body : JSON.stringify({
+          username, email, password
+        })
+      })
+      if(res.status === 400 || !res){
+        window.alert("Already Used Details");
+      }else{
+        window.alert("Registered successfully");
+        history.push('/login')
+      }
+    } catch (error){
+      console.log(error)
+    }
+  }
+
   return (
     <div id='register'>
         <div className="container shadow my-5">
             <div className="row justify-content-end">
                 <div className="col-md-5 d-flex flex-column align-items-center form text-white justify-content-center order-2">
                     <h1 className="display-4 fw-bolder">Hello, Jietians</h1>
-                    <p className="lead text-center">Enter your credentials to Login</p>
-                    <h5 className="mb-4">
+                    <p className="lead text-center">Enter your credentials to Register</p>
+                    {/* <h5 className="mb-4">
                         OR
                     </h5>
-                    <NavLink to='/login' className="btn btn-outline-light rounded-pill pb-2 w-50">Login</NavLink>
+                    <NavLink to='/login' className="btn btn-outline-light rounded-pill pb-2 w-50">Login</NavLink> */}
                 </div>
                 <div className="col-md-6 p-5">
                     <h1 className='display-6 fw-bolder mb-5'>REGISTER</h1>
-                    <form>
+                    <form onSubmit={handleSubmit} method="POST">
   <div class="mb-3">
     <label for="name" class="form-label">Username</label>
-    <input type="text" class="form-control" id="name"/>
+    <input type="text" class="form-control" id="name" name='username' value={user.username} onChange={handleInput} />
     </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name='email' value={user.email} onChange={handleInput}/>
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>  
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1"/>
+    <input type="password" class="form-control" id="exampleInputPassword1" name='password' value={user.password} onChange={handleInput}/>
   </div>
   <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
