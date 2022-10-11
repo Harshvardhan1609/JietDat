@@ -11,6 +11,7 @@ import Latestevent from './components/Latestevent';
 // import Login from './components/Login';
 import Register from './components/Register';
 import StudentCouncil from './components/StudentCouncil';
+import Students from './components/Students';
 // import DashBoard from './components/DashBoard';
 // import ProtectedRoute from './ProtectedRoute';
 // import Logout from './components/Logout';
@@ -29,6 +30,7 @@ function App() {
       <Route to path="/studentcouncils" element={<StudentCouncil/>} />
       {/* <Route  path="/login" element={<Login/>} /> */}
       <Route  path="/register" element={<Register/>} />
+      <Route  path="/students" element={<Students/>} />
       {/* <Route  path="/dashboard" element={<DashBoard/>} />
       <Route  path="/logout" element={<Logout/>} /> */}
     </Routes>

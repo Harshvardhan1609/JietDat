@@ -6,7 +6,7 @@ import CouncilMembers from './CouncilMembers'
 import Header from './Header'
 import Card from './image'
 
-export default function StudentCouncil() {
+export default function Students() {
   return (
     <div id='studentcouncils'>
         <section class="studentcouncils">
@@ -47,7 +47,3 @@ In addition to being this, student councils function as a liaison between the te
     </div>
   )
 }
-
-// <div className="container my-2 py-3 ">
-// </div>
-// </div>
