@@ -8,8 +8,8 @@ import Card from './image'
 
 export default function StudentCouncil() {
   return (
-    <div>
-        <section id="studentcouncil">
+    <div id='studentcouncil"'>
+        <section class="studentcouncils">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-8 mt-5">

@@ -5,7 +5,7 @@
   min-height: 500px;
 }
 
-#studentcouncil{
+.studentcouncils{
   background: rgb(0, 101, 219);
   background: radial-gradient(rgb(111, 0, 255) 50%, rgb(82, 0, 223) 100%);
   min-height: 500px;
