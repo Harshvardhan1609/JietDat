@@ -79,10 +79,11 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Contact Us
+                Student Council
               </NavLink>
             </li>
             <a href="https://forms.gle/Uk16HEzs9X6k1kpA9" target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib"> <i className='fa fa-user-plus me-2'></i>Register for Techtalks</a>
+           
           </ul>
         </div>
         <div className="nav-icon" onClick={handleClick}>
