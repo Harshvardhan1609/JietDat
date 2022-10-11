@@ -68,7 +68,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Gallary
+                Gallery
               </NavLink>
             </li>
             <li className="nav-item">

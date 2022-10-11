@@ -15,7 +15,7 @@ export default function Gallary() {
         <div className="container my-5 py-5">
             <div className="row">
                 <div className="col-12">
-                    <Header mainh1 = "Explore" bolder="Gallary" mainh2 = "Saga"/>
+                    <Header mainh1 = "Explore" bolder="Gallery" mainh2 = "Saga"/>
                 </div>
             </div>
             <div className="row mt-4">

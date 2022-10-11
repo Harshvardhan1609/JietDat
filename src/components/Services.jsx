@@ -6,7 +6,7 @@ import res1 from '../assets/res1.jpg'
 import development from '../assets/development.jpg'
 import newsletter from '../assets/newsletter.jpg'
 import Header from './Header'
-import Card from './Card'
+import Card from './CouncilMemCards'
 
 export default function Services() {
   return (
@@ -19,7 +19,7 @@ export default function Services() {
                     </div>
                 </div>
                 <div className="row mt-4">
-                        <Card head="Student Council" para="Events | Updates | Complaints" image={student} btn="Explore Now" linking={'https://forms.gle/pJvS5eyrJkz6yGhM7'}/>
+                        <Card head="Student Council" para="Events | Updates | Complaints" image={student} btn="Explore Now" linking='./StudentCouncil'/>
                         <Card head="Tech Talks" para="Auora of Tech" image={talks} btn="Explore Now" linking={'https://forms.gle/pJvS5eyrJkz6yGhM7'}/>
                         <Card head="Innovation Center" para="Submit your innovations" image={ai} btn="Explore Now"linking={'https://forms.gle/pJvS5eyrJkz6yGhM7'}/>
                         <Card head="Branch Fundamentals" para="Get your astra here" image={res1} btn="Explore Now"linking={'https://harshvardhanpurohi.wixsite.com/harshvardhan/books'}/>
