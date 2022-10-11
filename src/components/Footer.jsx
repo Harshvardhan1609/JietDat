@@ -4,10 +4,10 @@ export default function Footer() {
   return (
     <div>
     <footer class="py-5 footer">
-    <div class="row">
+    <div class="rows">
       <div class="col-2">
       </div>
-      <div class="col-6 offset-1 ">
+      <div class="col-6 offset-1">
         <form class="text-center text-light">
           <h5 className='fs-4 fw-bold'>Subscribe to our newsletter</h5>
           <p>Monthly digest of whats new and exciting from us.</p>
