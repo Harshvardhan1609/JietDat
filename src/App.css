@@ -11,6 +11,19 @@
   min-height: 500px;
 }
 
+.studentcouncils2{
+  background: url('./assets/bg3.jpg');
+  background-position: 40% 45%;
+  background-repeat: none;
+  min-height: 500px;
+}
+.studentcouncils3{
+  background: url('./assets/dubai.jpg');
+  background-position: 40% 45%;
+  background-repeat: none;
+  min-height: 500px;
+}
+
 .form{
   background: rgb(0, 101, 219);
   background: radial-gradient(rgb(111, 0, 255) 50%, rgb(82, 0, 223) 90%);

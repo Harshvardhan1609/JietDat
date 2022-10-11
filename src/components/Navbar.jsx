@@ -2,12 +2,19 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../Navbar.css";
 import { GiHamburgerMenu } from 'react-icons/gi';
-
+import { useNavigate } from 'react-router-dom';
 function NavBar() {
   const [click, setClick] = useState(false);
-
+  
   const handleClick = () => setClick(!click);
+  const navigate = useNavigate();
+  const goToContact = () => {
+      navigate('/techtalks');
+  
+  }
+
   return (
+    
     <>
       <nav className="navbar">
         <div className="nav-container">
@@ -82,7 +89,7 @@ function NavBar() {
                 Student Council
               </NavLink>
             </li>
-            <a href="https://forms.gle/Uk16HEzs9X6k1kpA9" target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib"> <i className='fa fa-user-plus me-2'></i>Register for Techtalks</a>
+            <button exact target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib" onClick={() => goToContact()}> <i className='fa fa-user-plus me-2'></i>Register for Techtalks</button>
            
           </ul>
         </div>

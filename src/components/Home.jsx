@@ -7,7 +7,7 @@ import Services from './Services'
 export default function Home() {
   return (
     <div>
-        <section id="home">
+        <section class="studentcouncils3">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-8 mt-5">
@@ -18,7 +18,7 @@ export default function Home() {
                             Experience the world of technology with stunning talks , workshops , events and interactions
                         </p>
                         <div className="buttons d-flex justify-content-center mt-5">
-                            <NavLink to="/latestevent" className="btn btn-light me-4 rounded-pill px-4 py-2">Latest Event</NavLink>
+                            <NavLink to="/latestevent" className="btn btn-primary me-4 rounded-pill px-4 py-2">Latest Event</NavLink>
                             <NavLink to="/gallary" className="btn btn-outline-light me-4 rounded-pill px-4 py-2">Gallary</NavLink>
                         </div>
                     </div>

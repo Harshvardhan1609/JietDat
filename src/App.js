@@ -12,6 +12,7 @@ import Latestevent from './components/Latestevent';
 import Register from './components/Register';
 import StudentCouncil from './components/StudentCouncil';
 import Students from './components/Students';
+import TechTalks from './components/TechTalks';
 // import DashBoard from './components/DashBoard';
 // import ProtectedRoute from './ProtectedRoute';
 // import Logout from './components/Logout';
@@ -22,6 +23,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route to path="/" element={<Home/>} />
+      <Route to path="/techtalks" element={<TechTalks/>} />
       <Route to path="/about" element={<About/>} />
       <Route to path="/services" element={<Services/>} />
       <Route to path="/contact" element={<Contact/>} />
@@ -31,6 +33,7 @@ function App() {
       {/* <Route  path="/login" element={<Login/>} /> */}
       <Route  path="/register" element={<Register/>} />
       <Route  path="/students" element={<Students/>} />
+      <Route  path="/techtalks" element={<TechTalks/>} />
       {/* <Route  path="/dashboard" element={<DashBoard/>} />
       <Route  path="/logout" element={<Logout/>} /> */}
     </Routes>

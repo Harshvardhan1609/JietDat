@@ -1,13 +1,20 @@
 import React from 'react'
 import './card.css'
+import { useNavigate } from 'react-router-dom'
+
 
 export default function Card(props) {
-    const himage = props.image
-    const head = props.head
+  const himage = props.image
+  const head = props.head
     const para = props.para
     const btn = props.btn
     const linking = props.linking
-    const hello = props.hello
+    const navigate = useNavigate();
+    const pp = `${linking}`;
+    const goToContact = () => {
+        navigate(pp);
+    
+    }
 
   return (
    <div className="col-md-4 mb-4">
@@ -16,7 +23,7 @@ export default function Card(props) {
   <div class="card-body text-center">
     <h5 class="card-title mb-3 fs-5 fw-bold">{head}</h5>
     <p class="card-text lead fs-6">{para}</p>
-    <a href={linking} target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill" onClick={hello}>{btn}</a>
+    <button className='btn btn-primary rounded-pill' onClick={() => goToContact()}>{btn}</button>
   </div>
 </div>
     </div>

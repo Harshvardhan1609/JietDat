@@ -19,8 +19,8 @@ export default function Services() {
                     </div>
                 </div>
                 <div className="row mt-4">
-                        <Card head="Student Council" para="Events | Updates | Complaints" image={student} btn="Explore Now" linking="/students"/>
-                        <Card head="Tech Talks" para="Auora of Tech" image={talks} btn="Explore Now" linking={'https://forms.gle/pJvS5eyrJkz6yGhM7'}/>
+                        <Card head="Student Council" para="Events | Updates | Complaints" image={student} btn="Explore Now" linking='./Students'  />
+                        <Card head="Tech Talks" para="Auora of Tech" image={talks} btn="Explore Now" linking={'./techtalks'}/>
                         <Card head="Innovation Center" para="Submit your innovations" image={ai} btn="Explore Now"linking={'https://forms.gle/pJvS5eyrJkz6yGhM7'}/>
                         <Card head="Branch Fundamentals" para="Get your astra here" image={res1} btn="Explore Now"linking={'https://harshvardhanpurohi.wixsite.com/harshvardhan/books'}/>
                         <Card head="Development Resources" para="Kick start development journey" image={development} btn="Explore Now"linking={'https://drive.google.com/drive/folders/1eAAV94bojzc25ui6dXEy6fnF8Rl-63pY?usp=sharing'}/>
