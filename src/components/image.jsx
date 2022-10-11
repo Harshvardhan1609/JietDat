@@ -3,8 +3,8 @@ import './images.css'
 
 export default function Image(props) {
     const himage = props.image
-    const head = props.head
-    const para = props.para
+    // const head = props.head
+    // const para = props.para
     // const btn = props.btn
     // const linking = props.linking
 
