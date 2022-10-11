@@ -1,0 +1,9 @@
+      <NavLink className="navbar-brand fw-bolder fs-4 mx-auto " to="/">JIETDAT</NavLink>
+      <NavLink className="btn btn-outline-primary ms-auto px-4 rounded-pill" to='/login'>
+        <i className='fa fa-sign-in me-2'></i> Login</NavLink> */}
+        <a href="https://forms.gle/Uk16HEzs9X6k1kpA9" target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill"> <i className='fa fa-user-plus me-2'></i>Register for Techtalks</a>
+      <NavLink className="btn btn-outline-primary ms-2 px-4 rounded-pill" to='/register'> */}
+        {/* <NavLink className="btn btn-outline-primary ms-2 px-4 rounded-pill" to='/dashboard'>
+        <i className='fa fa-sign-in me-2'></i>DashBoard</NavLink>
+        <NavLink to="/logout" className="btn btn-outline-primary ms-2 px-4 rounded-pill">
+        <i className='fa fa-sign-out me-2'></i>Logout</NavLink> 
