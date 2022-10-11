@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import engineers from '../assets/gallary/engineers.png'
-import open from '../assets/gallary/open.jfif'
+import open from '../assets/gallary/garba.jpg'
 
 export default function Latestevent() {
   return (
@@ -28,9 +28,9 @@ export default function Latestevent() {
     <div class="card p-1  card-block text-center ">
   <img className="card-img-top rounded shadow" src = {open} alt="Card cap"/>
   <div class="card-body text-center">
-    <h5 class="card-title  fs-5 fw-bold">Open Source Development</h5>
+    <h5 class="card-title  fs-5 fw-bold">Garba Night Images</h5>
   </div>
-    <a href="/" class="btn btn-primary rounded-pill">Coming Soon</a>
+    <a href="https://memzo.app/2385-JGI-Pics-2022-23278" target={"_blank"} rel="noreferrer"   class="btn btn-primary rounded-pill">Checkout Now</a>
 </div>
     </div>
                 </div>
