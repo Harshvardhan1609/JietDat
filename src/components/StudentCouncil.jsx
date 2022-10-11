@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import image from '../assets/about.png'
 import CouncilMembers from './CouncilMembers'
 
