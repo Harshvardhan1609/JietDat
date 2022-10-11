@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../assets/about.png'
+import image from '../assets/council.png'
 import CouncilMembers from './CouncilMembers'
 
 export default function StudentCouncil() {
@@ -24,7 +24,7 @@ export default function StudentCouncil() {
         </section>
         <div className="container my-5 py-5">
                 <div className="row">
-                    <div className="col-md-5">
+                    <div className="col-md-4">
                         <img src={image} alt="About"
                         className='w-75 mt-5' />
                     </div>

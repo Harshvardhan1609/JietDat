@@ -6,7 +6,7 @@ import res1 from '../assets/res1.jpg'
 import development from '../assets/development.jpg'
 import newsletter from '../assets/newsletter.jpg'
 import Header from './Header'
-import Card from './CouncilMemCards'
+import Card from './Card'
 
 export default function Services() {
   return (
