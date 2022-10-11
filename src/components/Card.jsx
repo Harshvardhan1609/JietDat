@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './card.css'
 
 export default function Card(props) {
@@ -16,7 +16,7 @@ export default function Card(props) {
   <div class="card-body text-center">
     <h5 class="card-title mb-3 fs-5 fw-bold">{head}</h5>
     <p class="card-text lead fs-6">{para}</p>
-    <Link to={linking} target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill">{btn}</Link>
+    <NavLink to={linking} target={"_blank"} rel="noreferrer" class="btn btn-primary me-4 rounded-pill px-4 py-2">{btn}</NavLink>
   </div>
 </div>
     </div>
