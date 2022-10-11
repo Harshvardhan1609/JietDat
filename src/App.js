@@ -5,7 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Gallary from './components/Gallary';
 import Latestevent from './components/Latestevent';
 // import Login from './components/Login';
@@ -27,13 +27,13 @@ function App() {
       <Route to path="/contact" element={<Contact/>} />
       <Route to path="/gallary" element={<Gallary/>} />
       <Route to path="/latestevent" element={<Latestevent/>} />
-      <Route to path="/studentcouncils" element={<StudentCouncil/>} />
       {/* <Route  path="/login" element={<Login/>} /> */}
       <Route  path="/register" element={<Register/>} />
       <Route  path="/students" element={<Students/>} />
       {/* <Route  path="/dashboard" element={<DashBoard/>} />
       <Route  path="/logout" element={<Logout/>} /> */}
     </Routes>
+      <Navigate to path="/studentcouncils" element={<StudentCouncil/>} />
     <Footer/>
     </>
   );
