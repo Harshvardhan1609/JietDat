@@ -1,6 +1,10 @@
 import React from 'react'
 import image from '../assets/council.png'
+import image1 from '../assets/d.png'
+import image2 from '../assets/209.png'
 import CouncilMembers from './CouncilMembers'
+import Header from './Header'
+import Card from './image'
 
 export default function StudentCouncil() {
   return (
@@ -22,25 +26,28 @@ export default function StudentCouncil() {
                 </div>
             </div>
         </section>
-        <div className="container my-5 py-5">
-                <div className="row">
-                    <div className="col-md-4">
-                        <img src={image} alt="About"
-                        className='w-75 mt-5' />
-                    </div>
-                    <div className="col-md-6">
-                        <h3 className="fs-5 mb-0">Role of Student Council</h3>
-                        <h3 className='display-6 mb-2'>Who <b>we</b> are</h3>
-                        <hr className='w-50' />
-                        <p className='lead mb-4'>
-                        Student councils are councils typically made up of students and exist to represent the students at a college. They organize and coordinate student activities.
+        <div className="container my-2 py-4">
+            <div className="row">
+                    <Header mainh1 = "About" bolder="Student Council" mainh2 = ""/>
+    <div className="col mr-9 ml-9">
+        <p className='lead mb-1 pt-10 text-center'>
+        Student councils are councils typically made up of students and exist to represent the students at a college. They organize and coordinate student activities.
 
 In addition to being this, student councils function as a liaison between the teachers, the administration and the students. They have a voice in college policies and can give their opinion on decisions that affect them.
-                        </p>
+        </p>
+        <div className="row mt-4">
+                        <Card image={image} />
+                        <Card image={image1}/>
+                        <Card image={image2} />
                     </div>
                 </div>
-            </div>
+        </div>
             <CouncilMembers/>
+    </div>
     </div>
   )
 }
+
+// <div className="container my-2 py-3 ">
+// </div>
+// </div>
