@@ -24,7 +24,7 @@ export default function Services() {
                         <Card head="Innovation Center" para="Submit your innovations" image={ai} btn="Explore Now"linking={'https://forms.gle/pJvS5eyrJkz6yGhM7'}/>
                         <Card head="Branch Fundamentals" para="Get your astra here" image={res1} btn="Explore Now"linking={'https://harshvardhanpurohi.wixsite.com/harshvardhan/books'}/>
                         <Card head="Development Resources" para="Kick start development journey" image={development} btn="Explore Now"linking={'https://drive.google.com/drive/folders/1eAAV94bojzc25ui6dXEy6fnF8Rl-63pY?usp=sharing'}/>
-                        <Card head="Newsletter" para="View latest newsletter" image={newsletter} btn="Explore Now"linking={'https://forms.gle/HjcwhHHWjZQrxTbM9'}/>
+                        <Card head="Newsletter" para="View latest newsletter" image={newsletter} btn="Explore Now"linking={'./newsletter'}/>
                     </div>
                     </div>
         </section>

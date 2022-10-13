@@ -23,6 +23,12 @@
   background-repeat: none;
   min-height: 500px;
 }
+.studentcouncils4{
+  background: url('./assets/news.jpg');
+  background-position: 60% 5%;
+  background-repeat: none;
+  min-height: 500px;
+}
 
 .form{
   background: rgb(0, 101, 219);
