@@ -38,7 +38,7 @@ export default function Event() {
     <div className="container my-2 py-4">
             <div className="row">
                     <Header mainh1 = "RULES" bolder="SSL 2K22" mainh2 = ""/>
-    <div className="col mr-9 ml-9">
+    <div className="col mr-9 ml-9" style={{ userSelect: "none" }}>
         <p className='lead mb-1 pt-10 '>
     <li>
         Each team will be playing with 11 players.
