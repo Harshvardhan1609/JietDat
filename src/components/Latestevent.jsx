@@ -1,9 +1,17 @@
 import React from 'react'
 import Header from './Header'
-import engineers from '../assets/gallary/engineers.png'
-import open from '../assets/gallary/garba.jpg'
+import engineers from '../assets/gallary/ban.jpg'
+import open from '../assets/gallary/super.jpg'
+import { useNavigate } from 'react-router-dom'
 
 export default function Latestevent() {
+  const linking = "../Event"
+  const navigate = useNavigate();
+  const pp = `${linking}`;
+  const goToContact = () => {
+      navigate(pp);
+  
+  }
   return (
     <div>
     <section id="latestevent">
@@ -19,18 +27,21 @@ export default function Latestevent() {
     <div class="card p-1  card-block text-center ">
   <img className="card-img-top rounded shadow" src = {engineers} alt="Card cap"/>
   <div class="card-body text-center">
-    <h5 class="card-title  fs-5 fw-bold">Engineers day fest</h5>
+    <h5 class="card-title  fs-5 fw-bold">Ideavita Nov 2022</h5>
   </div>
-    <a href="https://www.youtube.com/watch?v=wLqr65rW1kA&t=5827s" target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill">Watch Now</a>
+    <a href="https://forms.gle/pE4uezuShR3TbJBz5" target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill">Register Now</a>
 </div>
     </div>
     <div className="col-md-6 mb-2 align-items-center">
     <div class="card p-1  card-block text-center ">
   <img className="card-img-top rounded shadow" src = {open} alt="Card cap"/>
   <div class="card-body text-center">
-    <h5 class="card-title  fs-5 fw-bold">Garba Night Images</h5>
+    <h5 class="card-title  fs-5 fw-bold">Super Sixer League</h5>
   </div>
-    <a href="https://memzo.app/2385-JGI-Pics-2022-23278" target={"_blank"} rel="noreferrer"   class="btn btn-primary rounded-pill">Checkout Now</a>
+    {/* <a href="https://memzo.app/2385-JGI-Pics-2022-23278" target={"_blank"} rel="noreferrer"   class="btn btn-primary rounded-pill">Rules</a>
+     */}
+     {/* <NavLink to="/Eventrules" className="btn btn-primary me-4 rounded-pill px-4 py-2">Explore More</NavLink> */}
+     <button className='btn btn-primary rounded-pill' onClick={() => goToContact()}>Explore Now</button>
 </div>
     </div>
                 </div>

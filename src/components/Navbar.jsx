@@ -45,7 +45,7 @@ function NavBar() {
                 About
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 exact
                 to="/services"
@@ -55,7 +55,7 @@ function NavBar() {
               >
                 Activities
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <NavLink
                 exact
