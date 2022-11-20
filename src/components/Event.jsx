@@ -20,7 +20,7 @@ export default function Event() {
                          Get all the information about Competition and rules here 🏏
                         </p>
                         <div className="buttons d-flex justify-content-center mt-5">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCRWmqvNJJIuEg8hwNG-Ls_0ti_iHbVDeJ3EPkf9u3A6RHLg/viewform" target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib"> <i className='fa fa-user-plus me-2'></i>Registration Opening Soon</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCRWmqvNJJIuEg8hwNG-Ls_0ti_iHbVDeJ3EPkf9u3A6RHLg/viewform" target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib disabled"> <i className='fa fa-user-plus me-2'></i>Registration Opening Soon</a>
                         </div>
                         
                     </div>
