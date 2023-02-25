@@ -102,13 +102,12 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../Navbar.css";
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { useNavigate } from 'react-router-dom';
 
 function NavBar() {
   const [click, setClick] = useState(false);
   
   const handleClick = () => setClick(!click);
-  const navigate = useNavigate();
+
   const goToContact = () => {
     window.open('https://dailyprophets.netlify.app/', '_blank');
   }
@@ -178,22 +177,16 @@ function NavBar() {
               </NavLink>
             </li>
 
-            <li className="nav-item">
-              <a href="https://dailyprophets.netlify.app/" target="_blank" rel="noreferrer" className="btn btn-primary rounded-pill">
-                Register Now
-              </a>
+            <a href="https://dailyprophets.netlify.app/5" target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill">Register Now</a>
             </li>
-            
-            <li className="nav-item">
-              <button target="_blank" rel="noreferrer" className="btn btn-primary rounded-pill navib" onClick={goToContact}>
-                <i className='fa fa-user-plus me-2'></i>SOCIAL MEDIA
-              </button>
-            </li>
+            <button exact target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib" onClick={goToContact}>
+              <i className='fa fa-user-plus me-2'></i>SOCIAL MEDIA 
+            </button>
           </ul>
         </div>
         <div className="nav-icon" onClick={handleClick}>
-          <GiHamburgerMenu className="navi" />
-          <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
+          <GiHamburgerMenu className="navi " value={{ color: 'white'}}/>
+          <i className={click ? "fas" : "fas"}></i>
         </div>
       </nav>
     </>
