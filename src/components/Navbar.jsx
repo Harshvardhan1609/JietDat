@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "../Navbar.css";
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useNavigate } from 'react-router-dom';
+
 function NavBar() {
   const [click, setClick] = useState(false);
   
@@ -10,7 +11,6 @@ function NavBar() {
   const navigate = useNavigate();
   const goToContact = () => {
       navigate('/techtalks');
-  
   }
 
   return (
@@ -45,17 +45,6 @@ function NavBar() {
                 About
               </NavLink>
             </li>
-            {/* <li className="nav-item">
-              <NavLink
-                exact
-                to="/services"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Activities
-              </NavLink>
-            </li> */}
             <li className="nav-item">
               <NavLink
                 exact
@@ -89,14 +78,27 @@ function NavBar() {
                 Student Council
               </NavLink>
             </li>
-            <button exact target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib" onClick={() => goToContact()}> <i className='fa fa-user-plus me-2'></i>Register for Techtalks</button>
-           
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="https://dailyprophets.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Social Media
+              </NavLink>
+            </li>
+            <button exact target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib" onClick={() => goToContact()}>
+              <i className='fa fa-user-plus me-2'></i>Register for Techtalks
+            </button>
           </ul>
         </div>
         <div className="nav-icon" onClick={handleClick}>
-            <GiHamburgerMenu className="navi " value={{ color: 'white'}}/>
-            <i className={click ? "fas" : "fas"}></i>
-          </div>
+          <GiHamburgerMenu className="navi " value={{ color: 'white'}}/>
+          <i className={click ? "fas" : "fas"}></i>
+        </div>
       </nav>
       
     </>
