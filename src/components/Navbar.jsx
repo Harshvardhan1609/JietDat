@@ -178,19 +178,19 @@ function NavBar() {
             </li>
 
             <a href="https://dailyprophets.netlify.app/5" target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill">Register Now</a>
-            </li>
-            <button exact target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib" onClick={goToContact}>
-              <i className='fa fa-user-plus me-2'></i>SOCIAL MEDIA 
-            </button>
-          </ul>
-        </div>
-        <div className="nav-icon" onClick={handleClick}>
-          <GiHamburgerMenu className="navi " value={{ color: 'white'}}/>
-          <i className={click ? "fas" : "fas"}></i>
-        </div>
-      </nav>
-    </>
-  );
+</li>
+          <button exact target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib" onClick={goToContact}>
+            <i className='fa fa-user-plus me-2'></i>SOCIAL MEDIA 
+          </button>
+        </ul>
+      </div>
+      <div className="nav-icon" onClick={handleClick}>
+        <GiHamburgerMenu className="navi " value={{ color: 'white'}}/>
+        <i className={click ? "fas" : "fas"}></i>
+      </div>
+    </nav>
+  </>
+);
 }
 
 export default NavBar;
