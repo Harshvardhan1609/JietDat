@@ -78,17 +78,11 @@ function NavBar() {
                 Student Council
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="https://dailyprophets.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Social Media
-              </NavLink>
+<li className="nav-item">
+  <a href="https://dailyprophets.netlify.app/" className="nav-links" onClick={handleClick}>
+    Social Media
+  </a>
+</li>
             </li>
             <button exact target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib" onClick={() => goToContact()}>
               <i className='fa fa-user-plus me-2'></i>Register for Techtalks
