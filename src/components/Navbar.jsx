@@ -12,6 +12,9 @@ function NavBar() {
   const goToContact = () => {
       navigate('/techtalks');
   }
+  const goToContact = () => {
+  window.open('https://dailyprophets.netlify.app/', '_blank');
+}
 
   return (
     
@@ -78,15 +81,12 @@ function NavBar() {
                 Student Council
               </NavLink>
             </li>
-<li className="nav-item">
-  <a href="https://dailyprophets.netlify.app/" className="nav-links" onClick={handleClick}>
-    Social Media
-  </a>
-</li>
+
+ <a href="https://dailyprophets.netlify.app/5" target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill">Register Now</a>
             </li>
-            <button exact target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib" onClick={() => goToContact()}>
-              <i className='fa fa-user-plus me-2'></i>Register for Techtalks
-            </button>
+<button exact target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib" onClick={goToContact}>
+  <i className='fa fa-user-plus me-2'></i>SOCIAL MEDIA 
+</button>
           </ul>
         </div>
         <div className="nav-icon" onClick={handleClick}>
