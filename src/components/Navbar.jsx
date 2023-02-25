@@ -81,7 +81,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="https://dailyprophets.netlify.app/"
+                to="https://dailyprophets.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav-links"
