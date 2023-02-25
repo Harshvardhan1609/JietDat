@@ -8,7 +8,6 @@ function NavBar() {
   const [click, setClick] = useState(false);
   
   const handleClick = () => setClick(!click);
-  const navigate = useNavigate();
   const goToContact = () => {
 //       navigate('/techtalks');
      window.open('https://dailyprophets.netlify.app/', '_blank');
