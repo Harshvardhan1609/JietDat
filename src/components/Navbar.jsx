@@ -78,7 +78,7 @@ function NavBar() {
               </NavLink>
             </li>
 
-<a href="https://resonancejiet.netlify.com" target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib">Resonance</a>
+<a href="https://resonancejiet.netlify.com" target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill ">Resonance</a>
 <button exact target={"_blank"} rel="noreferrer" class="btn btn-primary rounded-pill navib" onClick={goToContact}>
   <i className='fa fa-user-plus me-2'></i>SOCIAL MEDIA 
 </button>
